@@ -16,7 +16,7 @@ export default function Register() {
 
     try {
       // Call the Backend API
-      const response = await axios.post('http://localhost:5000/api/register', {
+      const response = await axios.post('https://ecopulse-xh2w.onrender.com/api/register', {
         name,
         email,
         password

@@ -41,7 +41,7 @@ export default function Dashboard() {
 
   const fetchLogs = async (token) => {
     try {
-      const res = await axios.get('http://localhost:5000/api/logs', {
+      const res = await axios.get('https://ecopulse-xh2w.onrender.com/api/logs', {
         headers: { 'x-access-token': token }
       });
       if (res.data.status === 'ok') {
@@ -74,7 +74,7 @@ export default function Dashboard() {
     const co2 = (parseFloat(amount) * multiplier).toFixed(2);
 
     try {
-      await axios.post('http://localhost:5000/api/logs', {
+      await axios.post('https://ecopulse-xh2w.onrender.com/api/logs', {
         category,
         type: 'Standard', 
         amount: parseFloat(amount),

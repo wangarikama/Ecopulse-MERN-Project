@@ -15,7 +15,7 @@ export default function Login() {
 
     try {
       // Connect to your Backend API
-      const response = await axios.post('http://localhost:5000/api/login', {
+      const response = await axios.post('https://ecopulse-xh2w.onrender.com/api/login', {
         email,
         password
       });
